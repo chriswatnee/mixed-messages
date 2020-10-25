@@ -8,5 +8,9 @@ const mixedMessages = {
     'What do you do for a living?',
     'Do you believe in luck?',
     'What’s your hidden talent?'
-  ]
+  ],
+  getRandomItem(arr) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    return arr[randomIndex];
+  }
 };
