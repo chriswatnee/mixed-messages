@@ -18,5 +18,10 @@ const mixedMessages = {
     const name = this.getRandomItem(this.names);
     const question = this.getRandomItem(this.questions);
     return `${greeting}, ${name}. ${question}`;
+  },
+  logMessage() {
+    console.log(this.createMessage());
   }
 };
+
+mixedMessages.logMessage();
