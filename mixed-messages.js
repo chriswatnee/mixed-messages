@@ -12,5 +12,11 @@ const mixedMessages = {
   getRandomItem(arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
     return arr[randomIndex];
+  },
+  createMessage() {
+    const greeting = this.getRandomItem(this.greetings);
+    const name = this.getRandomItem(this.names);
+    const question = this.getRandomItem(this.questions);
+    return `${greeting}, ${name}. ${question}`;
   }
 };
